@@ -1,0 +1,29 @@
+.style1 {
+    margin: 0 auto;
+    border: 1px solid #bbb;
+    padding: 5px;
+    background-color: #eee;
+    line-height: 1.5em;
+}
+
+.marquee {
+    white-space:nowrap;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+}
+
+/*Makes marquee move. There are no hard coded paragraph values that depend on the width of the paragraph. Still no idea what keyframes is. Matt says its similar to a flip book. Transform means movement. Maybe translate means move it from one place to another so maybe its moves from one side of the page to the other side and then the space in between must be it raveling across anothe page (100-0-(100))*/
+@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+.right {
+    margin: 10px;
+}
+
+.smaller{
+    font-size: smaller;
+}
