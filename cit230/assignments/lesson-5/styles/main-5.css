@@ -1,0 +1,143 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;/* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    display: inline-block;
+}
+header h1 {
+    display: inline-block;
+    color: 	#6495ED;
+}
+header img {}
+}
+
+
+/* Can't get the  sub heading to change font color have tried multiple selectors can I put it in a p element? */
+div.subheading {
+    color: #696969;
+}
+
+nav {}
+nav button {}
+nav ul {}
+
+/* gives nav bar links color and blocks*/
+nav ul li {
+    display: block;
+    padding: 8px;
+    background-color: #ADD8E6;
+
+}
+
+/* Link color */
+nav ul li a {
+    color: #696969;
+}
+nav ul li.active a {}
+nav ul li a:hover {}
+
+/*sets whole section in a line to keep elements seperate*/
+main {
+    display: inline-block;
+}
+
+
+/*Changes the header color to blue*/
+main h2 {
+    color: #6495ED;
+    text-align: center
+}
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+
+.big {
+    width: 100%;
+}
+
+.small{
+    display:none;
+}
+
+section {}
+
+/* takes away the ten day forecast */
+.forecast {
+    display: none;
+}
+
+.summary {
+    display:none;
+}
+
+/*wraps high and low*/
+.highlow{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+/* separates high and low*/
+.highlow p {
+    margin: auto;
+}
+
+/*wraps condition and icon*/
+.current {
+    display:flex;
+    flex-wrap: wrap;
+}
+
+.current p {
+    margin: auto;
+}
+
+/*Sunny Icon*/
+picture img {
+    width: 10%;
+
+}
+
+/*brings text to center*/
+.conditions {
+    text-align: center;
+
+}
+
+article{
+    border: solid;
+    border-width: thin;
+    border-color: #696969;
+}
+article h3{
+    text-align: center;
+}
+
+article p {
+    margin: 2.5%;
+}
+
+article p.town-article img {  /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+    max-width: 80%; /* fill the page in the small/phone view */
+    margin: 10%;
+}
+
+footer {
+    text-align: center
+}
+footer aside {
+    background-color:#ADD8E6;
+    color: #696969;
+}
+footer>p {
+    background-color:#696969;
+    color: white;
+} /* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
