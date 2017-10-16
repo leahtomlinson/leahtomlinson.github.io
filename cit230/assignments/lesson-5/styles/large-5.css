@@ -3,7 +3,20 @@
 
     article p.town-article img { width: 29.333%; }
 
+    .big {
+        display:inline-block;
+    }
+
+    .small {
+        display: none;
+    }
+    .summaryw {
+        display: block;
+    }
+
+    main figure{
+        width: 100%;
 }
 
 
-}
+
