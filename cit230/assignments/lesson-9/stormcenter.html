@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-us">
+
+<head w3-include-HTML="modules/head.html">
+    <title>The Predictor</title>
+</head>
+
+<body>
+
+    <header w3-include-HTML="modules/header.html">
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav w3-include-HTML="modules/nav.html" class="topnav" id="myTopnav">
+    </nav>
+
+    <main>
+        <h2>Storm Center</h2>
+        <form action="thanks.html">
+            <div>
+                <label>Full Name:</label>
+                <input type="text" name="fullName" value="" pattern="[A-Za-z].{6,}" placeholder="Name" required>
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" value="" placeholder="youremail@server.com">
+            </div>
+            <div>
+                <label>Phone Number:</label>
+                <input type="tel" name="phone" value="" placeholder="1234567890" required>
+            </div>
+            <div>
+                <label>Zip Code:</label>
+                <input type="number" name="zipCode" pattern="[0-9]{5}" placeholder="88888" required>
+            </div>
+            <div>
+                <label>Storm Date:</label>
+                <input type="date" name="date">
+            </div>
+            <div>
+                <label>Storm Type:</label>
+                <input list="stormType" name="stormType" placeholder="Select type">
+                <datalist id="stormType">
+                    <option value="Flash Flood">
+                    <option value="Hail">
+                    <option value="Hurricane">
+                    <option value="Thunderstorm">
+                    <option value="Tornado">
+                </datalist>
+            </div>
+            <div>
+                <label>Storm Severity:</label>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)" name="severity">
+                <span id="ratingvalue">5</span>
+            </div>
+            <div>
+                <label>Storm Region:</label>
+                <select name="stormRegion">
+                        <option value="" selected disabled>Select Region</option>
+                        <option value="Franklin">Franklin</option>
+                        <option value="Greenville">Greenville</option>
+                        <option value="Springfield">Springfield</option>
+                    </select>
+            </div>
+            <div>
+                <label>In-Danger Level:</label>
+                <input type="radio" name="danger" value="yes" name="yes">Yes
+                <input type="radio" name="danger" value="no" name="yes">No
+            </div>
+            <div class="flex">
+                <label>Additional Information or Comments:</label>
+                <textarea name="message" rows="10" cols="30" name="comment">
+                </textarea>
+            </div>
+            <div class="submit">
+                <input type="submit" value="Submit" name="submit">
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer w3-include-HTML="modules/footer.html">
+    </footer>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+    <script src="scripts/adjustrating.js"></script>
+
+</body>
+
+</html>

@@ -184,3 +184,25 @@ footer>p {
 .hover:hover {
     box-shadow: 5px 5px 10px gray;
 }
+
+/*STORM CENTER*/
+form{
+    margin: 0 0 10px 0;
+}
+form label {
+    display:inline-block;
+    padding: 5px;
+    min-width: 120px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.submit {
+    padding: 5px;
+}
+
+
+
+
+
