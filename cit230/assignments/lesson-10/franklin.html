@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en-us">
+
+<head w3-include-HTML="modules/head.html">
+    <title>The Predictor</title>
+</head>
+
+<body>
+
+    <header w3-include-HTML="modules/header.html">
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav w3-include-HTML="modules/nav.html" class="topnav" id="myTopnav">
+    </nav>
+
+    <main>
+        <h2>Franklin</h2>
+        <div class="pictureconditions">
+            <picture class="pictureone">
+                <img src="images/franklindefault.jpg" alt="Franklin Idaho Scenic view" sizes="(max-width: 37.5em) 100vw, (max-width: 64em) 50vw, 100vw" srcset="images/franklinsmall.jpg 400w,
+                             images/franklinmedium.jpg 600w,
+                             images/franklinlarge.jpg 1300w">
+            </picture>
+            <section class="summaryw">
+                <h3 class="summary">Weather Summary</h3>
+                <div class="current">
+                    <p>Sunny</p>
+                    <picture>
+                        <img src="images/sun.jpg" class="sun" alt="image of sun">
+                    </picture>
+                </div>
+                <div class="highlow">
+                    <p>High: 90&deg;F</p>
+                    <p>Low: 66&deg;F</p>
+                </div>
+                <div class="conditions">
+                    <p>Precipitation: 0%</p>
+                    <p>Wind Speed: 5 mph SW</p>
+                    <p>Wind Chill: <span id="windchill"></span></p>
+                </div>
+            </section>
+        </div>
+
+        <section class="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <p class="town-article">
+                <img src="images/franklin-story.jpg" alt="franklin park trail">short article content placeholder. I'm putting more in here so that I can see where my image will really sit. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+            </p>
+        </article>
+
+
+    </main>
+
+    <footer w3-include-HTML="modules/footer.html">
+    </footer>
+
+    <script src="scripts/w3.js"></script>
+    <script src="scripts/modularize.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>

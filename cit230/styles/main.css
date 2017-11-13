@@ -44,6 +44,13 @@ footer {
     font-size: smaller;
 }
 
+main p {
+    color: gray;
+    font-size: .75em;
+}
+
 video{
     max-width: 100%;
 }
+
+
