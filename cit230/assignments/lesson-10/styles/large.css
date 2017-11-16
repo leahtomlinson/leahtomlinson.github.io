@@ -18,19 +18,18 @@
     /*GRID GALLERY*/
     .gallery {
         grid-template-columns: 1fr 1fr 1fr;
+        margin: 5px;
     }
     .hover:hover{
         box-shadow: none;
 
     }
-    .picdescription:hover{
+    .gallery .picdescription:hover{
         box-shadow: 5px 5px 10px gray;
     }
-    .home section{
 
-    }
 
-    section .row, .reverse {
+    .home section .row, .reverse {
         display: flex;
         flex-direction: column;
     }
