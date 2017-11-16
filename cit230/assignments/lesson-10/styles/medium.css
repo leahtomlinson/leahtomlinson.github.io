@@ -101,4 +101,21 @@
         grid-template-columns: 1fr 1fr;
     }
 
+
+
+/*HOME PAGE*/
+.home {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 }

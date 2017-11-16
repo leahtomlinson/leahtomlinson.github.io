@@ -56,7 +56,10 @@ nav ul li {
 nav ul li a {
     color: #696969;
 }
-nav ul li.active a {}
+nav ul li.active a {
+    color: #6495ED;
+
+}
 nav ul li a:hover {
     color: white;
 }
@@ -200,6 +203,17 @@ form label {
 }
 .submit {
     padding: 5px;
+}
+
+/*Home page specifics*/
+
+.row img, .reverse img{
+    max-width: 90%;
+    margin: 5px;
+}
+
+.home, .row, .reverse {
+    margin: 5px;
 }
 
 

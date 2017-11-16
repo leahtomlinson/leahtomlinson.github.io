@@ -26,5 +26,17 @@
     .picdescription:hover{
         box-shadow: 5px 5px 10px gray;
     }
+    .home section{
 
+    }
+
+    section .row, .reverse {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home section {
+        display: flex;
+        flex-direction: row;
+    }
 }
