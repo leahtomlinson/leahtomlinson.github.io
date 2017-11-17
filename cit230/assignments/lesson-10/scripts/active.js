@@ -1,3 +1,6 @@
+function makeActive()
+
+{
 var urlString, urlArray, pageHREF, menu, i, currentURL;
 urlString = document.location.href;
 urlArray = urlString.split('/');
@@ -12,4 +15,5 @@ if (pageHREF !== "") {
             menu[i].parentNode.className = 'active';
         }
     }
+}
 }
