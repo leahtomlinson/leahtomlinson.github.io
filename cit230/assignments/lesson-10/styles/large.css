@@ -37,5 +37,12 @@
     .home section {
         display: flex;
         flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+
+
+    }
+    .smallbox {
+        min-width: 30%;
     }
 }
