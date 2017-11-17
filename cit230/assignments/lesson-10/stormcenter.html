@@ -17,6 +17,8 @@
     <main>
         <h2>Storm Center</h2>
         <form action="thanks.html">
+           <fieldset>
+           <legend>Personal Information</legend>
             <div>
                 <label>Full Name:</label>
                 <input type="text" name="fullName" value="" pattern="[A-Za-z].{6,}" placeholder="Name" required>
@@ -33,6 +35,9 @@
                 <label>Zip Code:</label>
                 <input type="number" name="zipCode" pattern="[0-9]{5}" placeholder="88888" required>
             </div>
+            </fieldset>
+            <fieldset>
+            <legend>Storm Information</legend>
             <div>
                 <label>Storm Date:</label>
                 <input type="date" name="date">
@@ -75,6 +80,7 @@
             <div class="submit">
                 <input type="submit" value="Submit" name="submit">
             </div>
+            </fieldset>
 
         </form>
 
