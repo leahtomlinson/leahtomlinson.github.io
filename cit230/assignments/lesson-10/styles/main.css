@@ -81,6 +81,10 @@ main figure img {
     margin: 0;
 }
 
+pictureone{
+  max-width: 95%;
+}
+
 section {}
 
 .forecast {
@@ -231,7 +235,9 @@ fieldset{
     background-color: lightgrey
 }
 
-
+.home p {
+    margin: 5px;
+}
 
 
 
