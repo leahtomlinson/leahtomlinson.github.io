@@ -279,8 +279,8 @@ footer a {
 }
 
 footer li {
-    display: flex;
-    flex-direction: row;
+    float: right;
+    overflow:auto;
+    margin: 2px;
 }
-
 
