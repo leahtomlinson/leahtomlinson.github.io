@@ -156,7 +156,7 @@ footer>p{
 }
 
 footer a{
-    color: white;
+    color: yellow;
 
 }
 
@@ -421,6 +421,11 @@ iframe{
 .contact .form{
     margin: 50px 5px 0 5px;
 
+}
+
+video{
+    margin: 20px 0;
+    max-width: 100%;
 }
 
 
