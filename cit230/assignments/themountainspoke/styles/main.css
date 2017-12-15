@@ -1,0 +1,423 @@
+* { box-sizing: border-box;}
+body {
+    font-size: 16px;
+    font-family: 'Vollkorn', serif;
+    background-color: black;
+}
+
+main{
+    background-color:black;
+    color:white;
+}
+
+main section {
+    display: grid;
+    grid-template-columns:1fr;
+}
+
+main img{
+    max-width: 100%;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: lightgray;
+    padding: 0 5px 5px 5px;
+}
+
+header:first-child {
+    display: flex;
+    align-content: stretch;
+}
+
+header img{
+    flex: 100px 0 0;
+}
+
+header a{
+    justify-content: flex-end;
+    text-align: center;
+    flex: 1 0 0;
+    background-color: yellow;
+    padding:10px;
+    color: black;
+    text-decoration: none;
+
+}
+
+.name{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    flex: 2 0 0;
+}
+
+h1,h2,h3,h4, nav a {
+    font-family: 'Unica One', serif;
+}
+
+h1{
+    margin-bottom: 0;
+    font-size: 2em;
+}
+
+h2{
+    margin: 30px 5px 0px 5px;
+    font-size: 1.75em;
+    border-style: solid;
+    border-color: yellow;
+}
+
+h3{
+    border-bottom: solid;
+    border-bottom-width: thin;
+    border-bottom-color: yellow;
+
+}
+
+h4{
+    font-size: 16px;
+    margin: 0;
+}
+
+nav button{
+    max-width: 100%;
+    margin: 2px
+}
+
+nav ul li {
+    display: flex;
+    padding: 8px;
+    background-color: black;
+}
+
+nav ul li a {
+    color: white;
+
+}
+
+nav ul li.active a {
+    color: yellow;
+}
+
+.topnav ul{
+
+    display: none;
+}
+.topnav.responsive ul{
+    float: none;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+article{
+    margin: 5px;
+}
+
+article h3{
+    margin-bottom: 0;
+}
+
+.home a{
+    color: yellow;
+    text-decoration: none;
+}
+
+.home p{
+    margin:5px;
+}
+
+footer{
+    padding: 10px 0 0 0;
+    background-color: lightgray;
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+
+}
+
+footer aside{
+    margin: 5px;
+}
+
+footer aside p{
+    margin: 0;
+}
+
+footer>p{
+    margin: 0;
+    padding: 2px;
+    border-top: solid;
+    border-width: thin;
+}
+
+/*SERVICES*/
+
+.services tbody {
+    border: solid;
+    margin: 0 20px 20px 20px;
+}
+
+table {
+    background-color: white;
+    border: solid;
+    border-width: thick;
+    border-color: yellow;
+    border-collapse: collapse;
+    margin: 20px;
+    color: black;
+
+}
+.services th,
+.services td {
+    width: 1%;
+    border-width: thin;
+    border-color: yellow;
+    background-color: lightgray;
+    padding: 5px;
+    border: solid;
+    border-collapse: collapse;
+    border-color: yellow;
+
+}
+.services td {
+    text-align: center;
+    background-color: lightgray;
+
+}
+
+.services th{
+    font-family: 'Unica One', serif;
+    font-size: 20px;
+    background-color: white;
+
+}
+
+/*Products*/
+
+.products{
+    display: flex;
+    flex-direction: column;
+}
+
+.products img{
+    align-content: center;
+}
+
+#products #panel, #products #flip {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    background-color: lightgray;
+    border: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
+
+#products #flip{
+    margin: 10px 10px 0 10px;
+}
+
+#products #panel {
+    padding: 5px;
+    display: none;
+    margin: 0 10px 10px 10px;
+}
+
+#products #panel2, #products #flip2 {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    background-color: lightgray;
+    border: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
+
+#products #flip2{
+    margin: 10px 10px 0 10px;
+}
+
+#products #panel2 {
+    padding: 5px;
+    display: none;
+    margin: 0 10px 10px 10px;
+}
+
+#products #panel3, #products #flip3 {
+    color: black;
+    padding: 5px;
+    text-align: center;
+    background-color: lightgray;
+    border: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
+
+#products #flip3{
+    margin: 10px 10px 0 10px;
+}
+
+#products #panel3 {
+    padding: 5px;
+    display: none;
+    margin: 0 10px 10px 10px;
+}
+
+/*adventures*/
+
+.adventures{
+    display: flex;
+    flex-direction: column;
+}
+
+.adventures article div{
+    margin: 5px 5px 5px 1px;
+    padding: 10px;
+    border: solid;
+    border-width: thin;
+    border-color: yellow;
+}
+
+/*Events*/
+
+.events{
+    display: flex;
+    flex-direction: column;
+}
+
+.events img{
+    margin: 5px;
+}
+
+.events .small{
+    font-size: 12px;
+    margin: 30px  0 0 0;
+}
+
+.events button{
+    background-color: yellow;
+    font-family: 'Vollkorn', serif;
+}
+
+.events table{
+    max-width: 600px;
+}
+
+.events th,
+.events td {
+    width: 1%;
+    border-width: thin;
+    border-color: yellow;
+    background-color: lightgray;
+    padding: 5px;
+    border: solid;
+    border-collapse: collapse;
+    border-color: yellow;
+
+}
+.events td {
+    text-align: center;
+    background-color: lightgray;
+
+}
+
+.events th{
+    font-family: 'Unica One', serif;
+    font-size: 17px;
+    text-align: left;
+}
+
+.events a{
+    background-color: yellow;
+    padding:10px;
+    color: black;
+}
+
+/*register*/
+
+.register h2{
+    margin-bottom: 50px;
+}
+
+form{
+    margin: 0 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    color: black;
+}
+form label {
+    display:inline-block;
+    padding: 5px;
+    min-width: 130px;
+}
+
+.register form input{
+    min-width: 200px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.submit {
+    padding: 5px;
+}
+
+fieldset{
+    margin: 10px;
+    min-width: 375px;
+    background-color: lightgrey;
+}
+
+
+/*contact*/
+
+.format{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact h2{
+    margin-bottom: 20px;
+    align-items: stretch;
+}
+
+.contact section article h3{
+    margin: 0 0 10px 0;
+    font-size: 21px;
+    background-color: yellow;
+    color: black;
+}
+
+
+.contact article{
+    border: solid;
+    border-width: thin;
+    border-color: yellow;
+    margin: 10px;
+}
+
+.contact article p{
+    margin: 0;
+}
+
+iframe{
+    margin: auto 5px;
+}
+
+.contact .form{
+    margin: 50px 5px 0 5px;
+
+}
+
+
+
+

@@ -1,0 +1,101 @@
+@media only screen and (min-width: 37.5em) {
+    nav button {
+        display: none;
+    }
+    mytopnav.responsive {
+        display: flex;
+    }
+    .topnav ul {
+        display: flex;
+    }
+    nav {
+        width: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+        margin: 0 0 0 25px;
+    }
+    nav ul li {
+        /* float: left;
+        width: 16.66%;*/
+        flex-grow: 1;
+        text-align: center;
+        /* margin: 0 0 0 0;*/
+    }
+
+    .home{
+        margin: 5px;
+
+    }
+
+    .hero {
+        margin-left: 5px;
+    }
+
+    .home section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Serivces*/
+
+    .services{
+        margin-bottom: 100px;
+    }
+    /*Products*/
+
+    #products #flip{
+        margin: 10px 30px 0 30px;
+    }
+
+    #products #panel {
+
+        margin: 0 30px 10px 30px;
+    }
+
+    #products #flip2{
+        margin: 10px 30px 0 30px;
+    }
+
+    #products #panel2 {
+        margin: 0 30px 10px 30px;
+    }
+
+    #products #flip3{
+        margin: 10px 30px 0 30px;
+    }
+
+    #products #panel3 {
+        margin: 0 30px 10px 30px;
+    }
+
+/*Adventures*/
+
+    .adventures h3{
+        margin-top: 70px;
+    }
+
+    .adventures article img{
+        max-width: 400px;
+        max-height: 267px;
+    }
+
+    .adventures article{
+        display: flex;
+        flex-direction: row;
+    }
+    .adventures article div{
+        margin: 0px 5px 5px 20px;
+    }
+    .events a {
+        margin-left: 20px;
+        text-decoration: none;
+    }
+    .register form input{
+        min-width: 250px;
+    }
+}
