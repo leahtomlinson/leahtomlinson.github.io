@@ -155,6 +155,11 @@ footer>p{
     border-width: thin;
 }
 
+footer a{
+    color: white;
+
+}
+
 /*SERVICES*/
 
 .services tbody {
